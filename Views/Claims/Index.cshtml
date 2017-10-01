@@ -1,0 +1,59 @@
+﻿@model IEnumerable<HealthcareNetCoreSample.Models.Claim>
+
+@{
+    ViewData["Title"] = "Claims";
+}
+
+<h2>Claims</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ClaimID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AmountOwed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClaimStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsProvider)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Patient)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClaimID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AmountOwed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClaimStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsProvider.InsProviderID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Patient.FirstMidName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ClaimID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ClaimID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ClaimID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

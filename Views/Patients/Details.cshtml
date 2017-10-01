@@ -1,0 +1,75 @@
+﻿@model HealthcareNetCoreSample.Models.Patient
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<a asp-controller="Claims" asp-action="Create" asp-route-id="@Model.ID">Create New Claim</a>
+
+<div>
+    <h4>Patient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstMidName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstMidName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Claim ID</th>
+                    <th>Amount Owed</th>
+                    <th>Insurance Provider</th>
+                    <th>Claim Status</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                @foreach  (var item in Model.Claim)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ClaimID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AmountOwed)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.InsProvider.InsProviderName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ClaimStatus)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Details", "Details", "Claims", new {id = item.ClaimID}, null)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "Claims", new { id = item.ClaimID }, null)
+                        </td>
+                    </tr>
+
+                }
+            </table>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,11 @@
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\bin\Debug\netcoreapp2.0\HealthcareNetCoreSample.deps.json
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\bin\Debug\netcoreapp2.0\HealthcareNetCoreSample.runtimeconfig.json
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\bin\Debug\netcoreapp2.0\HealthcareNetCoreSample.runtimeconfig.dev.json
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\bin\Debug\netcoreapp2.0\HealthcareNetCoreSample.dll
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\bin\Debug\netcoreapp2.0\HealthcareNetCoreSample.pdb
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\obj\Debug\netcoreapp2.0\HealthcareNetCoreSample.csprojResolveAssemblyReference.cache
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\obj\Debug\netcoreapp2.0\HealthcareNetCoreSample.csproj.CoreCompileInputs.cache
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\obj\Debug\netcoreapp2.0\HealthcareNetCoreSample.AssemblyInfoInputs.cache
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\obj\Debug\netcoreapp2.0\HealthcareNetCoreSample.AssemblyInfo.cs
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\obj\Debug\netcoreapp2.0\HealthcareNetCoreSample.dll
+D:\Craig\Craigs Libraries\Dropbox\Programming\Projects\HealthcareNetCoreSample\HealthcareNetCoreSample\obj\Debug\netcoreapp2.0\HealthcareNetCoreSample.pdb
